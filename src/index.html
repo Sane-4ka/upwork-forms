@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Верстка «Knives layout»</title>
+	</head>
+	<body>
+		<div class="rootpage">
+			<h1>Верстка «Knives layout»</h1>
+			<div class="rootpage__info">
+				Особенности проекта
+			</div>
+			<h2>Готовые страницы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Главная</a></li>
+			</ol>
+			<h2>Попапы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html#"></a></li>
+			</ol>
+			<div class="rootpage__tnx">
+				<h2>Спасибо за заказ!</h2>
+				<p>Буду рад хорошему отзыву.</p>
+				<p>Обращайтесь еще!</p>
+			</div>
+			<div class="rootpage__contacts">
+				<h2>Мои контакты:</h2>
+				<p>Почта: <a href="mailto:sasha12121299@gmail.com">sasha12121299@gmail.com</a></p>
+				<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
+				<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+			</div>
+		</div>
+	</body>
+	<style>
+		@charset "UTF-8";
+		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+		* ,*::before, *::after {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box; 
+		}
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			min-width: 320px;
+			width: 100%;
+			color: rgb(255, 255, 255);
+			background: linear-gradient(45deg, #3b4e44, #dbdbdb);
+            background: no-repeat center / cover url('https://images.unsplash.com/photo-1550242499-b5171f56de56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+            /* background-size: cover; */
+		}
+		body {
+			font-family: Montserrat;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 1rem;
+            color: rgb(255, 255, 255);
+		}
+		a {
+			text-decoration: underline;
+			color: #fcfcd7
+		}
+		a:visited {
+			text-decoration: underline;
+			color: #c0c0c0;
+		}
+			a:hover {
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		img {
+			vertical-align: top;
+		}
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+		.rootpage{
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+            text-align: center;
+			/* align-items: flex-start; */
+		}
+		@media (max-width: 767px) {
+			.rootpage{
+				padding:30px 15px;
+			}
+		}
+		h1 {
+			color: #a68cf0;
+			font-size: 2.5rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 1.85rem;
+				margin: 0px 0px 1.25rem 0px;
+			}
+		}
+		h2 {
+			color: #7a6686;
+			font-size: 1.25rem;
+			margin: 0px 0px 1rem 0px;
+		}
+		@media (max-width: 767px) {
+			 h2 {
+				font-size: 1.125rem;
+				margin: 0px 0px 1rem 0px;
+			}
+		}
+		.rootpage__info{
+			line-height: 140%;
+			margin: 0px 0px 1.5rem 0px;
+		}
+
+		.rootpage__list{
+			margin: 0px 0px 2.25rem 1.25rem;
+		}
+		.rootpage__list li:not(:last-child){
+			margin: 0px 0px 15px 0px;
+		}
+		.rootpage__contacts,
+		.rootpage__tnx{
+			border-radius: 200px;
+			padding: 20px 65px;
+			line-height: 140%;
+		}
+		@media (max-width: 767px){
+		.rootpage__contacts,
+		.rootpage__tnx{
+			border-radius:40px;
+			padding: 20px;
+		}
+		}
+		.rootpage__contacts{
+			background: linear-gradient(45deg, #83b4bd, #6b778b);
+            transition: all 0.3s ease 0s;
+            border: 1px solid #000;
+		}
+		.rootpage__contacts a{
+			color: #e3d9ff;
+		}
+        .rootpage__contacts h2 {
+            color: rgb(77, 20, 41);
+        }
+        .rootpage__tnx h2 {
+            color: rgb(77, 20, 41);
+        }
+        /* .rootpage__contacts:hover {
+            background: rgb(128, 149, 136);
+            border-top-left-radius: 8px;
+        } */
+		.rootpage__tnx{
+			background: linear-gradient(45deg, #b59ec7, #506594);;
+			margin: 0px 0px 1rem 0px;
+            transition: all 0.3s ease 0s;
+            border: 1px solid #000;
+		}
+        /* .rootpage__tnx:hover{
+            background: rgb(54, 35, 75);
+            border-top-right-radius: 8px;
+        } */
+	</style>
+</html>

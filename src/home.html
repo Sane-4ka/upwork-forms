@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+                <section class="main-page">
+                    <div class="main-page__img"></div>
+                    <div class="main-page__body body-mainpage">
+                        <a href="" class="body-mainpage__logo"><img data-src="@img/logo.svg" alt="logo"></a>
+                        <div class="body-mainpage__text">
+                            <h3 class="body-mainpage__title">Create Account</h3>
+                            <p class="body-mainpage__subtitle">Please register your account!</p>
+                            <a href="" class="body-mainpage__button button">
+                                Create Account
+                                <div class="button__icon"><img data-src="@img/icons/arrow-right.svg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="body-mainpage__link-signin">Already have an Account? <span>Sign In</span></div>
+                    </div>
+                </section>
+                <section class="form-page">
+                    <div class="form__container">
+                        <a href="" class="form__logo">
+                            <img data-src="@img/logo.svg" alt="logo">
+                        </a>    
+                        <form class="steps__form">
+                            <div class="steps__block">
+                                <div class="step__line"></div>
+                                <div class="step__line_red"></div>
+                                <div class="step__item step__item_active">
+                                    <img data-src="@img/icons/location.svg" alt="">
+                                </div> 
+                                <div class="step__item">
+                                    <img data-src="@img/icons/crown.svg" alt="">
+                                </div> 
+                                <div class="step__item ">
+                                    <img data-src="@img/icons/persone.svg" alt="">
+                                </div> 
+                                <div class="step__item">
+                                    <img data-src="@img/icons/heart.svg" alt="">
+                                </div> 
+                                <div class="step__item">
+                                    <img data-src="@img/icons/user-tag.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="steps__text text-steps">
+                                <div class="text-steps__title">Which Hub Are You In?</div>
+                                <div class="text-steps__subtitle">We are active in major cities and we schedule meetings based on time zones. Let us know your home base.</div>
+                            </div>
+                            <div class="steps__mainblock">
+                                <div class="steps__mainblock_1">
+                                    <div class="steps__input input-steps">
+                                        <img class="input-steps__icon" data-src="@img/icons/search-normal.svg" alt="">
+                                        <input autocomplete="off" type="text" name="form[search]" data-error="Ошибка" placeholder="Search your hub..." class="input-steps__block input">
+                                    </div>
+                                    <div class="steps__general-block block-general">
+                                        <div class="block-general__title">Popular Hub</div>
+                                        <div class="block-general__form form-radio">
+                                            <div class="form-radio__item active">
+                                                <input type="radio" checked class="form-radio__input" name="popular-hub" value="Austin">
+                                                <div class="form-radio__img">
+                                                    <img data-src="@img/1.png" alt="">
+                                                </div>
+                                                <div class="form-radio__text">Austin</div>
+                                            </div>
+                                            <div class="form-radio__item">
+                                                <input type="radio" class="form-radio__input" name="popular-hub" value="Dallas">
+                                                <div class="form-radio__img">
+                                                    <img data-src="@img/2.png" alt="">
+                                                </div>
+                                                <div class="form-radio__text">Dallas</div>
+                                            </div>
+                                            <div class="form-radio__item">
+                                                <input type="radio" class="form-radio__input" name="popular-hub" value="San Antonio">
+                                                <div class="form-radio__img">
+                                                    <img data-src="@img/3.png" alt="">
+                                                </div>
+                                                <div class="form-radio__text">San Antonio</div>
+                                            </div>
+                                            <div class="form-radio__item">
+                                                <input type="radio" class="form-radio__input" name="popular-hub" value="Houston">
+                                                <div class="form-radio__img">
+                                                    <img data-src="@img/4.png" alt="">
+                                                </div>
+                                                <div class="form-radio__text">Houston</div>
+                                            </div>
+                                            <div class="form-radio__item">
+                                                <input type="radio" class="form-radio__input" name="popular-hub" value="New York">
+                                                <div class="form-radio__img">
+                                                    <img data-src="@img/5.png" alt="">
+                                                </div>
+                                                <div class="form-radio__text">New York</div>
+                                            </div>
+                                            <div class="form-radio__item">
+                                                <input type="radio" class="form-radio__input" name="popular-hub" value="Los Angeles">
+                                                <div class="form-radio__img">
+                                                    <img data-src="@img/6.png" alt="">
+                                                </div>
+                                                <div class="form-radio__text">Los Angeles</div>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
+                                <div class="steps__mainblock_2">
+                                    <div class="steps__general-block block-general">
+                                        <div class="block-general__title">Select Objectives</div>
+                                        <div class="block-general__form form-checkbox">
+                                            <div class="form-checkbox__item">
+                                                <div class="form-checkbox__img">
+                                                    <img data-src="@img/01.png" alt="">
+                                                </div>
+                                                <div class="form-checkbox__checkbox checkbox">
+                                                    <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="Brainstorm with peers" name="form[objectives]">
+                                                    <label for="c_1" class="checkbox__label"><span class="checkbox__text">Brainstorm with peers</span></label>
+                                                </div>
+                                                <div class="form-checkbox__mark active"></div>
+                                            </div>
+                                            <div class="form-checkbox__item">
+                                                <div class="form-checkbox__img">
+                                                    <img data-src="@img/02.png" alt="">
+                                                </div>
+                                                <div class="form-checkbox__checkbox checkbox">
+                                                    <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="Grow your team" name="form[objectives]">
+                                                    <label for="c_2" class="checkbox__label"><span class="checkbox__text">Grow your team</span></label>
+                                                </div>
+                                                <div class="form-checkbox__mark"></div>
+                                            </div>
+                                            <div class="form-checkbox__item">
+                                                <div class="form-checkbox__img">
+                                                    <img data-src="@img/03.png" alt="">
+                                                </div>
+                                                <div class="form-checkbox__checkbox checkbox">
+                                                    <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="Start a company" name="form[objectives]">
+                                                    <label for="c_3" class="checkbox__label"><span class="checkbox__text">Start a company</span></label>
+                                                </div>
+                                                <div class="form-checkbox__mark"></div>
+                                            </div>
+                                            <div class="form-checkbox__item">
+                                                <div class="form-checkbox__img">
+                                                    <img data-src="@img/04.png" alt="">
+                                                </div>
+                                                <div class="form-checkbox__checkbox checkbox">
+                                                    <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="Explore other companies" name="form[objectives]">
+                                                    <label for="c_4" class="checkbox__label"><span class="checkbox__text">Explore other companies</span></label>
+                                                </div>
+                                                <div class="form-checkbox__mark"></div>
+                                            </div>
+                                        </div>
+                                    </div>       
+                                </div>
+                                <div class="steps__mainblock_3">
+                                    <div class="steps__general-block block-general">
+                                        <div class="block-general__form form-image">
+                                            <input type="file" name="image" id="file" class="form-image__upload">
+                                            <label class="form-image__label img-label" for="file">
+                                                <img class="img-label__img" data-src="@img/gallery.svg" alt="upload file">
+                                                <div class="img-label__text">Upload Your Photo</div>
+                                            </label>
+                                            <div class="form-image__input">
+                                                <div class="form-image__title block-general__title">Other Profile</div>
+                                                <div class="form-image__item input-steps">                                                    
+                                                    <img class="input-steps__icon" data-src="@img/icons/search-normal.svg" alt="">
+                                                    <input autocomplete="off" type="text" name="form[linkedin]" data-error="Ошибка" placeholder="LinkedIn URL" class="input-steps__block input">                                                    
+                                                </div>                                                
+                                                <div class="form-image__item input-steps">                                                    
+                                                    <img class="input-steps__icon" data-src="@img/icons/search-normal.svg" alt="">
+                                                    <input autocomplete="off" type="text" name="form[twitter]" data-error="Ошибка" placeholder="Twitter URL" class="input-steps__block input">                                                    
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                    </div>     
+                                </div>
+                                <div class="steps__mainblock_4">
+                                    <div class="steps__input input-steps">
+                                        <img class="input-steps__icon" data-src="@img/icons/search-normal.svg" alt="">
+                                        <input autocomplete="off" type="text" name="form[search]" data-error="Ошибка" placeholder="Add Your Interest" class="input-steps__block input">
+                                    </div>
+                                    <div class="steps__general-block block-general">
+                                        <div class="block-general__title">Business</div>
+                                        <div class="block-general__form form-checkbox-bordered">
+                                            <div class="form-checkbox-bordered__item active">
+                                                <input id="business" checked data-error="Ошибка" class="checkbox-bordered__input" type="checkbox" value="Enterpreneurship" name="form[business]">
+                                                <label for="business" class="checkbox-bordered__label"><span class="checkbox-bordered__text">Enterpreneurship</span></label>    
+                                            </div>
+                                            <div class="form-checkbox-bordered__item">
+                                                <input id="business" data-error="Ошибка" class="checkbox-bordered__input" type="checkbox" value="Marketing" name="form[business]">
+                                                <label for="business" class="checkbox-bordered__label"><span class="checkbox-bordered__text">Marketing</span></label>
+                                            </div>
+                                            <div class="form-checkbox-bordered__item">
+                                                <input id="business" data-error="Ошибка" class="checkbox-bordered__input" type="checkbox" value="Sales" name="form[business]">
+                                                <label for="business" class="checkbox-bordered__label"><span class="checkbox-bordered__text">Sales</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="block-general__title">Investing & Finance</div>
+                                        <div class="block-general__form form-checkbox-bordered">
+                                            <div class="form-checkbox-bordered__item">
+                                                <input id="invest" data-error="Ошибка" class="checkbox-bordered__input" type="checkbox" value="Angle Investing" name="form[invest]">
+                                                <label for="invest" class="checkbox-bordered__label"><span class="checkbox-bordered__text">Angle Investing</span></label>    
+                                            </div>
+                                            <div class="form-checkbox-bordered__item">
+                                                <input id="invest" data-error="Ошибка" class="checkbox-bordered__input" type="checkbox" value="Crypto" name="form[invest]">
+                                                <label for="invest" class="checkbox-bordered__label"><span class="checkbox-bordered__text">Crypto</span></label>
+                                            </div>
+                                            <div class="form-checkbox-bordered__item">
+                                                <input id="invest" data-error="Ошибка" class="checkbox-bordered__input" type="checkbox" value="Quant Finance" name="form[invest]">
+                                                <label for="invest" class="checkbox-bordered__label"><span class="checkbox-bordered__text">Quant Finance</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="steps__mainblock_5">  
+
+                                </div>
+                                <div class="steps__buttons">
+                                    <div class="steps__buttons_prev button">Back</div>
+                                    <div class="steps__buttons_next button">Next</div>
+                                    <div class="steps__buttons_google button">Finish Sign Up With Google</div>
+                                </div> 
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
